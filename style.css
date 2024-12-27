@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ff5d8f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.head{
+    height: 10vh;
+    width:100vw;
+    background-color: #590d22;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:#ffe5ec;
+    font-size: 3vmin;
+}
+.choices{
+    height: 46vmin;
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffa6c1;
+}
+.icon{
+    height: 25vmin;
+    width: 25vmin;
+    margin:4vmin;
+    border-radius: 50%;
+    background-color: #590d22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-image: none;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0rem 0rem 0.4rem 0.4rem #590d22;
+}
+.icon:hover{
+    scale: 1.1;
+    box-shadow: 0rem 0rem 0.4rem 0.4rem #0c0a3e;
+}
+img{
+    height: 24.5vmin;
+    width: 24.5vmin;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.result{
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+}
+.player,.computer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2vmin;
+    font-size: 4vmin;
+}
+#playerScore,#computerScore{
+    font-size: 8vmin;
+}
+.message-box{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background-color: #590d22;
+    color:#ffa6c1;
+    width: 90vw;
+    padding:2vmin;
+    font-size: 2.5vmin;
+    border-radius: 4vmin;
+    border: dashed 4px #ffa6c1;
+}
+#message{
+    display: inline;
+    text-align: center;
+}
+.reset-score{
+    background-color:#ffd9da;
+    margin:2vmin;
+    padding: 2vmin;
+    border-radius: 3vmin;
+    font-size: 2vmin;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+#reset{
+    background-color:#ffd9da;
+    border:none;
+    border-radius: 1vmin;
+    font-size: 2vmin;
+    cursor: pointer;
+    font-size: 3vmin;
+    color:#590d22;
+    font-weight: 700;
+}   
+.reset-score:hover{
+    scale:1.1;
+    border:4px solid #590d22;
+}
